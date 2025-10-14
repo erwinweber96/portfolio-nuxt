@@ -1,9 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [],
+  content: ['./components/**/*.{vue,js,ts}', './layouts/**/*.vue', './pages/**/*.vue'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        finlandica: ['Finlandica', 'sans-serif']
+      }
+    }
   },
-  plugins: [],
+  plugins: []
 }
-

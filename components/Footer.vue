@@ -17,16 +17,16 @@ const currentYear: number = new Date().getFullYear()
           <h4 class="font-bold">Services</h4>
           <ul class="space-y-2 text-gray-400">
             <li>
-              <NuxtLink to="/contact" class="hover:text-white">Web Development</NuxtLink>
+              <NuxtLink to="/services" class="hover:text-white">Web Development</NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/contact" class="hover:text-white">Mixing & Mastering</NuxtLink>
+              <NuxtLink to="/services" class="hover:text-white">Mixing & Mastering</NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/contact" class="hover:text-white">Ecommerce Solutions</NuxtLink>
+              <NuxtLink to="/services" class="hover:text-white">Ecommerce Solutions</NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/contact" class="hover:text-white">Electronic Press Kit</NuxtLink>
+              <NuxtLink to="/services" class="hover:text-white">Electronic Press Kit</NuxtLink>
             </li>
           </ul>
         </div>

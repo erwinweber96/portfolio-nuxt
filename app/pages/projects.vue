@@ -9,7 +9,7 @@ const projects: Project[] = [
     title: 'Neuronoir',
     description:
       'Indie record label with dark and heavy music made in Romania. Home of Pâenil Era, Sylvanshine, Vaarcloc and more.',
-    image: 'meta-neuro.png',
+    image: 'meta-neuro2.png',
     link: 'https://neuronoir.art',
     category: 'web'
   },

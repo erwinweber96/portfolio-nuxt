@@ -1,0 +1,8 @@
+query GetArticles {
+    articles(orderBy: postedAt_DESC) {
+        postedAt
+        slug
+        title
+        excerpt
+    }
+}

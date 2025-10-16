@@ -5,19 +5,13 @@ type Link = {
 }
 
 //TODO: make mobile navbar
-
 const route = useRoute()
-const pathname = route.path
 
 //TODO: make NavbarLink component
-//TODO: fix -- doesn't reload class on route change
-const linkBaseClass: Ref<string> = ref(
-  'px-4 py-2 rounded-lg text-sm font-medium transition-colors relative'
-)
-const currentPageLinkClass: Ref<string> = ref(`${linkBaseClass.value} text-pink-500`)
-const nonCurrentPageLinkClass: Ref<string> = ref(
-  `${linkBaseClass.value} text-gray-300 hover:text-white hover:bg-white/10`
-)
+//TODO: find a better solution than substring match
+const linkBaseClass: string = 'px-4 py-2 rounded-lg text-sm font-medium transition-colors relative'
+const currentPageLinkClass: string = `${linkBaseClass} text-pink-500`
+const nonCurrentPageLinkClass: string = `${linkBaseClass} text-gray-300 hover:text-white hover:bg-white/10`
 
 const links: Array<Link> = [
   { href: '/', label: 'Home' },
@@ -41,7 +35,7 @@ const links: Array<Link> = [
             v-for="(link, index) in links"
             :key="index"
             :to="link.href"
-            :class="pathname === link.href ? currentPageLinkClass : nonCurrentPageLinkClass"
+            :class="route.path.includes(link.href) ? currentPageLinkClass : nonCurrentPageLinkClass"
           >
             {{ link.label }}
           </NuxtLink>

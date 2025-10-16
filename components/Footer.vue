@@ -17,22 +17,16 @@ const currentYear: number = new Date().getFullYear()
           <h4 class="font-bold">Services</h4>
           <ul class="space-y-2 text-gray-400">
             <li>
-              <NuxtLink to="/app/pages/contact" class="hover:text-white">Web Development</NuxtLink>
+              <NuxtLink to="/contact" class="hover:text-white">Web Development</NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/app/pages/contact" class="hover:text-white"
-                >Mixing & Mastering</NuxtLink
-              >
+              <NuxtLink to="/contact" class="hover:text-white">Mixing & Mastering</NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/app/pages/contact" class="hover:text-white"
-                >Ecommerce Solutions</NuxtLink
-              >
+              <NuxtLink to="/contact" class="hover:text-white">Ecommerce Solutions</NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/app/pages/contact" class="hover:text-white"
-                >Electronic Press Kit</NuxtLink
-              >
+              <NuxtLink to="/contact" class="hover:text-white">Electronic Press Kit</NuxtLink>
             </li>
           </ul>
         </div>
@@ -40,10 +34,10 @@ const currentYear: number = new Date().getFullYear()
         <div class="space-y-4">
           <h4 class="font-bold">Quick Links</h4>
           <ul class="space-y-2 text-gray-400">
-            <li><NuxtLink to="/app/pages/about" class="hover:text-white">About</NuxtLink></li>
-            <li><NuxtLink to="/app/pages/projects" class="hover:text-white">Projects</NuxtLink></li>
-            <li><NuxtLink to="/app/pages/blog" class="hover:text-white">Blog</NuxtLink></li>
-            <li><NuxtLink to="/app/pages/contact" class="hover:text-white">Contact</NuxtLink></li>
+            <li><NuxtLink to="/about" class="hover:text-white">About</NuxtLink></li>
+            <li><NuxtLink to="/projects" class="hover:text-white">Projects</NuxtLink></li>
+            <li><NuxtLink to="/blog" class="hover:text-white">Blog</NuxtLink></li>
+            <li><NuxtLink to="/contact" class="hover:text-white">Contact</NuxtLink></li>
           </ul>
         </div>
 

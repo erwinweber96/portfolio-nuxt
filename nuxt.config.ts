@@ -13,6 +13,7 @@ export default defineNuxtConfig({
           Finlandica: [400, 500, 600, 700]
         }
       }
-    ]
+    ],
+    'nuxt-graphql-client'
   ]
 })

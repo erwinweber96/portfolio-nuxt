@@ -3,7 +3,7 @@ import type { BlogArticle } from '~~/types/BlogArticle'
 
 const { params, path } = useRoute()
 
-const response: any = await GqlGetArticleBySlug({
+const response: GetArticleBySlugQuery = await GqlGetArticleBySlug({
   slug: params.slug?.toString()
 })
 const article: BlogArticle = response.article

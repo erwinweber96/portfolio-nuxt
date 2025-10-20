@@ -13,8 +13,6 @@ import GraphqlIcon from '~~/components/icons/GraphqlIcon.vue'
 import PostgresIcon from '~~/components/icons/PostgresIcon.vue'
 import NodejsIcon from '~~/components/icons/NodejsIcon.vue'
 
-//TODO: replace gradient with component
-
 const { path } = useRoute()
 const description: string =
   "I'm Erwin Weber, a multifaceted DIY enthusiast with a passion for music, technology, and creative solutions. With years of experience in the music industry and web development, I've dedicated myself to supporting artists and creatives with their technical needs."

@@ -18,8 +18,6 @@ useHead({
   ]
 })
 
-//TODO: replace with store or something similar
-//TODO: cdn or some image module
 const projects: Project[] = [
   {
     title: 'Neuronoir',

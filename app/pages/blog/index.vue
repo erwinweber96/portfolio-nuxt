@@ -2,7 +2,7 @@
 import BlogArticleCard from '~~/components/BlogArticleCard.vue'
 import type { BlogArticle } from '~~/types/BlogArticle'
 
-const blogArticlesResponse: any = await GqlGetArticles() //TODO: i don't like this (any)
+const blogArticlesResponse: GetArticlesQuery = await GqlGetArticles()
 const blogArticles: BlogArticle[] = blogArticlesResponse.articles
 
 const { path } = useRoute()

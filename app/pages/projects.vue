@@ -2,6 +2,22 @@
 import type { Project } from '~~/types/Project'
 import ProjectCard from '~~/components/ProjectCard.vue'
 
+const { path } = useRoute()
+const description: string =
+  'Explore my portfolio of creative works spanning web development, music production, and design projects.'
+const title: string = 'Projects | erwinweber.io'
+
+useHead({
+  title: title,
+  meta: [
+    { name: 'description', content: description },
+    { name: 'keywords', content: title },
+    { property: 'og:title', content: title },
+    { property: 'og:description', content: description },
+    { property: 'canonical', content: 'https://erwinweber.io/' + path }
+  ]
+})
+
 //TODO: replace with store or something similar
 //TODO: cdn or some image module
 const projects: Project[] = [
@@ -107,8 +123,7 @@ const getCategoryClass = (buttonCategory: ProjectCategoryType) => {
       <div class="max-w-7xl mx-auto px-6 py-24 text-center">
         <h1 class="text-5xl font-bold mb-6">My Projects</h1>
         <p class="text-xl text-gray-400 max-w-2xl mx-auto">
-          Explore my portfolio of creative works spanning web development, music production, and
-          design projects.
+          {{ description }}
         </p>
       </div>
     </div>

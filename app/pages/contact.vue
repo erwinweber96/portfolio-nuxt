@@ -4,6 +4,18 @@ import SocialLinks from '~~/components/SocialLinks.vue'
 import FreelancerIcon from '~~/components/icons/FreelancerIcon.vue'
 import UpworkIcon from '~~/components/icons/UpworkIcon.vue'
 import FiverrIcon from '~~/components/icons/FiverrIcon.vue'
+
+const { path } = useRoute()
+const title: string = 'Contact | erwinweber.io'
+
+useHead({
+  title: title,
+  meta: [
+    { name: 'keywords', content: title },
+    { property: 'og:title', content: title },
+    { property: 'canonical', content: 'https://erwinweber.io/' + path }
+  ]
+})
 </script>
 
 <template>

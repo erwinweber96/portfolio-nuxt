@@ -14,6 +14,22 @@ import PostgresIcon from '~~/components/icons/PostgresIcon.vue'
 import NodejsIcon from '~~/components/icons/NodejsIcon.vue'
 
 //TODO: replace gradient with component
+
+const { path } = useRoute()
+const description: string =
+  "I'm Erwin Weber, a multifaceted DIY enthusiast with a passion for music, technology, and creative solutions. With years of experience in the music industry and web development, I've dedicated myself to supporting artists and creatives with their technical needs."
+const title: string = 'About | erwinweber.io'
+
+useHead({
+  title: title,
+  meta: [
+    { name: 'description', content: description },
+    { name: 'keywords', content: title },
+    { property: 'og:title', content: title },
+    { property: 'og:description', content: description },
+    { property: 'canonical', content: 'https://erwinweber.io/' + path }
+  ]
+})
 </script>
 
 <template>
@@ -24,9 +40,7 @@ import NodejsIcon from '~~/components/icons/NodejsIcon.vue'
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
         <div class="space-y-6">
           <p class="text-lg text-gray-300">
-            I'm Erwin Weber, a multifaceted DIY enthusiast with a passion for music, technology, and
-            creative solutions. With years of experience in the music industry and web development,
-            I've dedicated myself to supporting artists and creatives with their technical needs.
+            {{ description }}
           </p>
 
           <p class="text-lg text-gray-300">

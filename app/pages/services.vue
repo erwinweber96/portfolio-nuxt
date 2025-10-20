@@ -1,6 +1,23 @@
 <script setup lang="ts">
 import ServiceCard from '~~/components/ServiceCard.vue'
 import type { Service } from '~~/types/Service'
+
+const { path } = useRoute()
+const description: string =
+  'Explore my portfolio of creative works spanning web development, music production, and design projects.'
+const title: string = 'Services | erwinweber.io'
+
+useHead({
+  title: title,
+  meta: [
+    { name: 'description', content: description },
+    { name: 'keywords', content: title },
+    { property: 'og:title', content: title },
+    { property: 'og:description', content: description },
+    { property: 'canonical', content: 'https://erwinweber.io/' + path }
+  ]
+})
+
 const services: Service[] = [
   {
     title: 'Stem Mastering',
@@ -59,7 +76,7 @@ const services: Service[] = [
       <div class="max-w-7xl mx-auto px-6 py-24 text-center">
         <h1 class="text-5xl font-bold mb-6">Services</h1>
         <p class="text-xl text-gray-400 max-w-2xl mx-auto">
-          Here are some of the services I'm currently offering to creatives and businesses.
+          {{ description }}
         </p>
       </div>
     </div>

@@ -1,12 +1,31 @@
 <script setup lang="ts">
 import type { BlogArticle } from '~~/types/BlogArticle'
 
-const { params } = useRoute()
+const { params, path } = useRoute()
 
 const response: any = await GqlGetArticleBySlug({
-  slug: params.slug.toString()
+  slug: params.slug?.toString()
 })
 const article: BlogArticle = response.article
+const metaTitle: string = article.title + ' | erwinweber.io'
+
+useHead({
+  title: metaTitle,
+  meta: [
+    { name: 'description', content: article.excerpt },
+    { name: 'keywords', content: metaTitle },
+    { property: 'og:title', content: metaTitle },
+    { property: 'og:description', content: article.excerpt },
+    { property: 'canonical', content: 'https://erwinweber.io/blog/' + path }
+  ]
+})
+
+useSeoMeta({
+  title: metaTitle,
+  ogTitle: metaTitle,
+  description: article.excerpt,
+  ogDescription: article.excerpt
+})
 </script>
 
 <template>

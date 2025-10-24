@@ -30,7 +30,7 @@ const visible = ref(true)
         <Transition name="fade-slide" appear>
           <div
             v-if="visible"
-            class="bg-cover py-32 max-sm:bg-none bg-[url('erwin.jpg')] relative z-10 my-auto"
+            class="bg-cover py-32 max-sm:bg-none bg-[url('/erwin.jpg')] relative z-10 my-auto"
           >
             <h1 class="text-8xl max-sm:text-6xl font-bold mb-8">
               Erwin

@@ -67,4 +67,7 @@ useSeoMeta({
   font-weight: bold;
   padding: 15px 0 15px 0;
 }
+#blog-content a {
+  color: rgb(236 72 153 / var(--tw-text-opacity, 1));
+}
 </style>

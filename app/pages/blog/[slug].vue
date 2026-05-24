@@ -58,7 +58,7 @@ useSeoMeta({
 <style>
 #blog-content p,
 #blog-content img {
-  padding-bottom: 5px;
+  padding-bottom: 15px;
 }
 #blog-content h1,
 #blog-content h2,
@@ -68,6 +68,9 @@ useSeoMeta({
   padding: 15px 0 15px 0;
 }
 #blog-content a {
-  color: rgb(236 72 153 / var(--tw-text-opacity, 1));
+  color: rgb(236 72 153);
+}
+#blog-content ul {
+  list-style-type: circle;
 }
 </style>

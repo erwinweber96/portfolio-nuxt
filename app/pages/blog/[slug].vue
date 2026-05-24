@@ -41,7 +41,7 @@ useSeoMeta({
       <div id="blog-content" class="whitespace-pre-wrap" v-html="article.content.html"></div>
 
       <div class="text-pink-500 my-8">
-        <NuxtLink to="/contact"> Contact me today to get started. → </NuxtLink>
+        <NuxtLink to="/contact"> Need help? → </NuxtLink>
       </div>
 
       <div class="flex flex-wrap gap-3 mt-24">
